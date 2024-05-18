@@ -1,1 +1,1 @@
-# template_ssr_vue_quasar
+# README
