@@ -10,6 +10,7 @@ yarn create quasar
 ```
 
 ### create-quasar
+
 ```bash
 √ What would you like to build? » App with Quasar CLI, let's go!
 √ Project folder: ... quasar-project
@@ -27,9 +28,11 @@ yarn create quasar
 ```
 
 ---
+
 ### integrations
 
 #### SSR (Mode)
+
 ServerSideRendering
 
 SSR -> safer/more performant/SEO (Search-Engine Optimized)
@@ -37,6 +40,7 @@ SSR -> safer/more performant/SEO (Search-Engine Optimized)
 ```bash
 quasar mode add ssr
 ```
+
 #### PWA (Mode)
 
 ```bash
@@ -44,37 +48,48 @@ quasar mode add pwa
 ```
 
 > https://quasar.dev/quasar-cli-vite/developing-ssr/introduction
+
 > https://quasar.dev/quasar-cli-vite/developing-pwa/introduction
+
 ---
+
 ### tooling
+
 > https://quasar.dev/app-extensions/discover#tooling
 >
+
 #### testing
+
 > https://github.com/quasarframework/quasar-testing
 
 #### apollo (GraphQL)
+
 > https://github.com/quasarframework/app-extension-apollo/tree/dev
 
 #### pinia plugins
 
 ##### Pinia Plugin Persist
+
 By enabling the persist plugin on your store, the whole state will be stored in the sessionStorage by default.
 
 > https://seb-l.github.io/pinia-plugin-persist/
 
-
 ```bash
 yarn add pinia-plugin-persist
 ```
+
 ---
+
 ### components
+
 > https://quasar.dev/app-extensions/discover#components
 
-> [!NOTE]
-> ToDo
-
 ---
+
+## config the app
+
 ### Icon Genie CLI
+
 > https://quasar.dev/icongenie/installation
 
 ```bash
@@ -82,50 +97,78 @@ yarn add pinia-plugin-persist
 yarn global add @quasar/icongenie
 ```
 
+#### Icons
+
+> https://quasar.dev/vue-components/icon
+> https://iconexplorer.app/?selected
+>
+> https://icons.getbootstrap.com/
+---
+
+### Layout
+
+> https://quasar.dev/layout-builder
+
+#### MainLayout
+
+Separate Layout Components
 
 ---
+
 ### Theme Builder
+> https://quasar.dev/style/theme-builder
 
-> [!NOTE]
-> ToDo
+#### DarkTheme
+> https://quasar.dev/quasar-plugins/dark#dark-api
 
 ---
 
-### Install packages
-#### lodash
+## Install packages
+
+### lodash
+
 Lodash modular utilities.
 > https://lodash.com/
 
 ```bash
 yarn add lodash
 ```
+
 ✅⭕
 
-#### dotenv
+### dotenv
+
 Loads environment variables from .env file
 > https://github.com/motdotla/dotenv#readme
 
 ```bash
 yarn add dotenv
 ```
+
 ✅⭕
 
-#### APEXCHARTS.JS
+### APEXCHARTS.JS
+
 Modern & Interactive Open-source Charts
 > https://apexcharts.com/
 >
+
 ```bash
 yarn add apexcharts
 ```
+
 ✅⭕
 
-#### Chart.js
+### Chart.js
+
 Easy and beautiful charts with Chart.js and Vue.js
 > https://vue-chartjs.org/
-> 
+>
+
 ```bash
 yarn add vue-chartjs chart.js
 yarn add vue3-apexcharts
 
 ```
+
 ✅⭕
