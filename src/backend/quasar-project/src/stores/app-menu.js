@@ -6,13 +6,13 @@ export const useAppMenuStore = defineStore("menus", () => {
       icon: "bi-columns-gap",
       label: "Dashboard",
       separator: false,
-      link: "",
+      link: "dashboard",
     },
     {
       icon: "bi-info-square",
       label: "Info",
       separator: true,
-      link: "",
+      link: "info",
   },
     {
       icon: "bi-gear",

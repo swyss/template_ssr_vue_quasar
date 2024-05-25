@@ -22,7 +22,7 @@ const app_menus = useAppMenuStore();
     <q-scroll-area class="fit q-ptb-sm q-pl-sm">
       <q-list>
         <template v-for="(menuItem, index) in app_menus.leftMenuList" :key="index">
-          <q-item v-ripple clickable to="menuItem.link" >
+          <q-item v-ripple clickable :to="menuItem.link" >
             <q-item-section avatar>
               <q-icon :name="menuItem.icon" :color="'accent'"/>
             </q-item-section>

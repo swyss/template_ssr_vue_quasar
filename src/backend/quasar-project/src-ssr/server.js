@@ -11,6 +11,7 @@
  */
 import express from "express";
 import compression from "compression";
+var helmet = require('helmet')
 import {
   ssrClose,
   ssrCreate,
@@ -29,9 +30,9 @@ import {
 export const create = ssrCreate((/* { ... } */) => {
   const app = express();
 
-  // attackers can use this header to detect apps running Express
-  // and then launch specifically-targeted attacks
-  app.disable("x-powered-by");
+  app.set('trust proxy', 1) // trust first proxy
+  app.use(express.static('public'))
+  app.use(helmet())
 
   // place here any middlewares that
   // absolutely need to run before anything else
