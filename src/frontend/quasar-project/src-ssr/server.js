@@ -34,7 +34,14 @@ export const create = ssrCreate((/* { ... } */) => {
   const app = express();
 
 // use helmet middleware
-  app.use(helmet());
+  app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", "'unsafe-inline'"],
+      }
+    })
+  );
 
   // use the cookie-parser before csurf middleware
   app.use(cookieParser());

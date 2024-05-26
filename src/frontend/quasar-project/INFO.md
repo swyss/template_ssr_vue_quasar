@@ -1,4 +1,6 @@
 # QUASAR PROJECT INFO
+>https://tatum.io/blog/best-javascript-libraries
+---
 
 ## create a Quasar app
 
@@ -22,9 +24,11 @@ yarn create quasar
 √ Install project dependencies? (recommended) » Yes, use yarn
 ```
 
+---
+
 ## add modes
 
-### SSR
+### SSR ✅
 
 > https://quasar.dev/quasar-cli-vite/developing-ssr/preparation
 
@@ -32,7 +36,7 @@ yarn create quasar
 quasar mode add ssr
 ```
 
-### PWA
+### PWA ✅
 
 > https://quasar.dev/quasar-cli-vite/developing-pwa/preparation
 
@@ -40,10 +44,98 @@ quasar mode add ssr
 quasar mode add pwa
 ```
 
-## add packages
+---
 
+## add packages
+### lodash ✅
+
+Lodash modular utilities.
+> https://lodash.com/
+
+```bash
+yarn add lodash
+```
+
+### dotenv ✅
+
+Loads environment variables from .env file
+> https://github.com/motdotla/dotenv#readme
+
+```bash
+yarn add dotenv
+```
+
+### moment ✅
+Parse, validate, manipulate, and display dates and times in JavaScript.
+
+> https://momentjs.com/
+
+```bash
+yarn add moment
+```
+
+### APEXCHARTS.JS ⭕
+
+Modern & Interactive Open-source Charts
+> https://apexcharts.com/
+>
+
+```bash
+yarn add apexcharts
+```
+
+### Chart.js ⭕
+
+Easy and beautiful charts with Chart.js and Vue.js
+> https://vue-chartjs.org/
+>
+
+```bash
+yarn add vue-chartjs chart.js
+yarn add vue3-apexcharts
+```
+
+---
+
+## config&design
+
+### Icon Genie CLI
+
+> https://quasar.dev/icongenie/installation
+
+```bash
+# Node.js >=18 is required.
+yarn global add @quasar/icongenie
+```
+
+#### Icons ✅
+
+> https://quasar.dev/vue-components/icon
+> https://iconexplorer.app/?selected
+>
+> https://icons.getbootstrap.com/
+
+### Layout
+
+> https://quasar.dev/layout-builder
+
+#### MainLayout
+
+#### Separate Layout Components
+
+### Theme Builder ✅
+
+> https://quasar.dev/style/theme-builder
+
+#### DarkTheme ✅
+
+> https://quasar.dev/quasar-plugins/dark#dark-api
+
+
+---
 
 ## configure quasar.config.js
+
 ```js
 /* eslint-env node */
 
@@ -55,7 +147,7 @@ quasar mode add pwa
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
-const { configure } = require("quasar/wrappers");
+const {configure} = require("quasar/wrappers");
 const path = require("path");
 
 module.exports = configure(function (/* ctx */) {
@@ -133,7 +225,7 @@ module.exports = configure(function (/* ctx */) {
               lintCommand: 'eslint "./**/*.{js,mjs,cjs,vue}"',
             },
           },
-          { server: false },
+          {server: false},
         ],
       ],
     },
@@ -225,7 +317,7 @@ module.exports = configure(function (/* ctx */) {
 
       // optional; add/remove/change properties
       // of production generated package.json
-      extendPackageJson (pkg) {
+      extendPackageJson(pkg) {
         // directly change props of pkg;
         // no need to return anything
       },
@@ -233,7 +325,7 @@ module.exports = configure(function (/* ctx */) {
       // optional;
       // handles the Webserver webpack config ONLY
       // which includes the SSR middleware
-      extendWebpackWebserver (cfg) {
+      extendWebpackWebserver(cfg) {
         // directly change props of cfg;
         // no need to return anything
       },
@@ -241,7 +333,7 @@ module.exports = configure(function (/* ctx */) {
       // optional; EQUIVALENT to extendWebpack() but uses webpack-chain;
       // handles the Webserver webpack config ONLY
       // which includes the SSR middleware
-      chainWebpackWebserver (chain) {
+      chainWebpackWebserver(chain) {
         // chain is a webpack-chain instance
         // of the Webpack configuration
       }
@@ -272,7 +364,7 @@ module.exports = configure(function (/* ctx */) {
 
       // Optional, overrides metaVariables above;
       // Use this OR metaVariables, but not both;
-      metaVariablesFn (manifest) {
+      metaVariablesFn(manifest) {
         // ...
         return [
           {
@@ -307,7 +399,7 @@ module.exports = configure(function (/* ctx */) {
       // optional; webpack config Object for
       // the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
       // if using workbox in InjectManifest mode
-      extendWebpackCustomSW (cfg) {
+      extendWebpackCustomSW(cfg) {
         // directly change props of cfg;
         // no need to return anything
       },
@@ -315,7 +407,7 @@ module.exports = configure(function (/* ctx */) {
       // optional; EQUIVALENT to extendWebpackCustomSW() but uses webpack-chain;
       // for the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
       // if using workbox in InjectManifest mode
-      chainWebpackCustomSW (chain) {
+      chainWebpackCustomSW(chain) {
         // chain is a webpack-chain instance
         // of the Webpack configuration
 
