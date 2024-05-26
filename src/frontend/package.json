@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "csurf": "^1.11.0",
+    "helmet": "^7.1.0"
+  }
+}
