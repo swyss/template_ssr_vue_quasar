@@ -9,7 +9,6 @@
  * Make sure to yarn add / npm install (in your project root)
  * anything you import here (except for express and compression).
  */
-import express from 'express'
 import compression from 'compression'
 import {
   ssrClose,
@@ -18,9 +17,11 @@ import {
   ssrRenderPreloadTag,
   ssrServeStaticContent
 } from 'quasar/wrappers'
-import csurf from 'csurf';
-import helmet from 'helmet';
 
+const express = require('express');
+const helmet = require('helmet');
+const cookieParser = require('cookie-parser');
+const csrf = require('csurf');
 /**
  * Create your webserver and return its instance.
  * If needed, prepare your webserver to receive
@@ -29,13 +30,31 @@ import helmet from 'helmet';
  * Should NOT be async!
  */
 export const create = ssrCreate((/* { ... } */) => {
-  const app = express()
+// config express app
+  const app = express();
 
-  // Use Helmet for security
+// use helmet middleware
   app.use(helmet());
 
-  // Use csurf for CSRF protection
-  app.use(csurf());
+  // use the cookie-parser before csurf middleware
+  app.use(cookieParser());
+
+  // setup csrf protection
+  const csrfProtection = csrf({ cookie: true });
+
+  // you can use csrfProtection globally or on specific routes
+  app.use(csrfProtection);
+
+/*  app.get('/form', function(req, res) {
+    // pass the csrfToken to the view
+    res.render('send', { csrfToken: req.csrfToken() });
+  });*/
+
+/*  app.post('/process', function(req, res) {
+    res.send('Data is being processed...');
+  });*/
+
+  app.listen(3000);
 
   // attackers can use this header to detect apps running Express
   // and then launch specifically-targeted attacks
