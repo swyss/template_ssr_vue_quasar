@@ -25,9 +25,7 @@ module.exports = configure(function (/* ctx */) {
     css: ["app.scss"],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
-    extras: [
-'bootstrap-icons'
-    ],
+    extras: ["bootstrap-icons"],
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
@@ -90,10 +88,10 @@ module.exports = configure(function (/* ctx */) {
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
     framework: {
-      config: {dark:'true'},
+      config: { dark: "true" },
 
-      iconSet: 'bootstrap-icons', // Quasar icon set
-      lang: 'en-US', // Quasar language pack
+      iconSet: "bootstrap-icons", // Quasar icon set
+      lang: "en-US", // Quasar language pack
 
       // For special cases outside of where the auto-import strategy can have an impact
       // (like functional components as one of the examples),
@@ -154,7 +152,7 @@ module.exports = configure(function (/* ctx */) {
       manualPostHydrationTrigger: false,
 
       prodPort: 3000, // The default port that the production server should use
-                      // (gets superseded if process∙env∙PORT is specified at runtime)
+      // (gets superseded if process∙env∙PORT is specified at runtime)
 
       maxAge: 1000 * 60 * 60 * 24 * 30,
       // Tell browser when a file from the server should expire from cache
@@ -164,12 +162,12 @@ module.exports = configure(function (/* ctx */) {
       // List of SSR middleware files (src-ssr/middlewares/*). Order is important.
       middlewares: [
         // ...
-        'render' // Should not be missing, and should be last in the list.
+        "render", // Should not be missing, and should be last in the list.
       ],
 
       // optional; add/remove/change properties
       // of production generated package.json
-      extendPackageJson (pkg) {
+      extendPackageJson(pkg) {
         // directly change props of pkg;
         // no need to return anything
       },
@@ -177,7 +175,7 @@ module.exports = configure(function (/* ctx */) {
       // optional;
       // handles the Webserver webpack config ONLY
       // which includes the SSR middleware
-      extendWebpackWebserver (cfg) {
+      extendWebpackWebserver(cfg) {
         // directly change props of cfg;
         // no need to return anything
       },
@@ -185,10 +183,10 @@ module.exports = configure(function (/* ctx */) {
       // optional; EQUIVALENT to extendWebpack() but uses webpack-chain;
       // handles the Webserver webpack config ONLY
       // which includes the SSR middleware
-      chainWebpackWebserver (chain) {
+      chainWebpackWebserver(chain) {
         // chain is a webpack-chain instance
         // of the Webpack configuration
-      }
+      },
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa
@@ -203,20 +201,20 @@ module.exports = configure(function (/* ctx */) {
       // variables used to inject specific PWA
       // meta tags (below are default values);
       metaVariables: {
-        appleMobileWebAppCapable: 'yes',
-        appleMobileWebAppStatusBarStyle: 'default',
-        appleTouchIcon120: 'icons/apple-icon-120x120.png',
-        appleTouchIcon180: 'icons/apple-icon-180x180.png',
-        appleTouchIcon152: 'icons/apple-icon-152x152.png',
-        appleTouchIcon167: 'icons/apple-icon-167x167.png',
-        appleSafariPinnedTab: 'icons/safari-pinned-tab.svg',
-        msapplicationTileImage: 'icons/ms-icon-144x144.png',
-        msapplicationTileColor: '#000000'
+        appleMobileWebAppCapable: "yes",
+        appleMobileWebAppStatusBarStyle: "default",
+        appleTouchIcon120: "icons/apple-icon-120x120.png",
+        appleTouchIcon180: "icons/apple-icon-180x180.png",
+        appleTouchIcon152: "icons/apple-icon-152x152.png",
+        appleTouchIcon167: "icons/apple-icon-167x167.png",
+        appleSafariPinnedTab: "icons/safari-pinned-tab.svg",
+        msapplicationTileImage: "icons/ms-icon-144x144.png",
+        msapplicationTileColor: "#000000",
       },
 
       // Optional, overrides metaVariables above;
       // Use this OR metaVariables, but not both;
-/*      metaVariablesFn (manifest) {
+      /*      metaVariablesFn (manifest) {
         // ...
         return [
           {
@@ -251,7 +249,7 @@ module.exports = configure(function (/* ctx */) {
       // optional; webpack config Object for
       // the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
       // if using workbox in InjectManifest mode
-      extendWebpackCustomSW (cfg) {
+      extendWebpackCustomSW(cfg) {
         // directly change props of cfg;
         // no need to return anything
       },
@@ -259,14 +257,13 @@ module.exports = configure(function (/* ctx */) {
       // optional; EQUIVALENT to extendWebpackCustomSW() but uses webpack-chain;
       // for the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
       // if using workbox in InjectManifest mode
-      chainWebpackCustomSW (chain) {
+      chainWebpackCustomSW(chain) {
         // chain is a webpack-chain instance
         // of the Webpack configuration
-
         // example:
         // chain.plugin('eslint-webpack-plugin')
         //   .use(ESLintPlugin, [{ extensions: [ 'js' ] }])
-      }
+      },
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/developing-cordova-apps/configuring-cordova

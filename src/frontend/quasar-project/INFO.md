@@ -1,5 +1,5 @@
 # QUASAR PROJECT INFO
->https://tatum.io/blog/best-javascript-libraries
+
 ---
 
 ## create a Quasar app
@@ -47,9 +47,11 @@ quasar mode add pwa
 ---
 
 ## add packages
+
 ### lodash ✅
 
 Lodash modular utilities.
+
 > https://lodash.com/
 
 ```bash
@@ -59,6 +61,7 @@ yarn add lodash
 ### dotenv ✅
 
 Loads environment variables from .env file
+
 > https://github.com/motdotla/dotenv#readme
 
 ```bash
@@ -66,6 +69,7 @@ yarn add dotenv
 ```
 
 ### moment ✅
+
 Parse, validate, manipulate, and display dates and times in JavaScript.
 
 > https://momentjs.com/
@@ -77,8 +81,8 @@ yarn add moment
 ### APEXCHARTS.JS ⭕
 
 Modern & Interactive Open-source Charts
+
 > https://apexcharts.com/
->
 
 ```bash
 yarn add apexcharts
@@ -87,8 +91,8 @@ yarn add apexcharts
 ### Chart.js ⭕
 
 Easy and beautiful charts with Chart.js and Vue.js
+
 > https://vue-chartjs.org/
->
 
 ```bash
 yarn add vue-chartjs chart.js
@@ -110,8 +114,7 @@ yarn global add @quasar/icongenie
 
 #### Icons ✅
 
-> https://quasar.dev/vue-components/icon
-> https://iconexplorer.app/?selected
+> https://quasar.dev/vue-components/icon > https://iconexplorer.app/?selected
 >
 > https://icons.getbootstrap.com/
 
@@ -131,7 +134,6 @@ yarn global add @quasar/icongenie
 
 > https://quasar.dev/quasar-plugins/dark#dark-api
 
-
 ---
 
 ## configure quasar.config.js
@@ -147,7 +149,7 @@ yarn global add @quasar/icongenie
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
-const {configure} = require("quasar/wrappers");
+const { configure } = require("quasar/wrappers");
 const path = require("path");
 
 module.exports = configure(function (/* ctx */) {
@@ -225,7 +227,7 @@ module.exports = configure(function (/* ctx */) {
               lintCommand: 'eslint "./**/*.{js,mjs,cjs,vue}"',
             },
           },
-          {server: false},
+          { server: false },
         ],
       ],
     },
@@ -302,7 +304,7 @@ module.exports = configure(function (/* ctx */) {
       manualPostHydrationTrigger: false,
 
       prodPort: 3000, // The default port that the production server should use
-                      // (gets superseded if process∙env∙PORT is specified at runtime)
+      // (gets superseded if process∙env∙PORT is specified at runtime)
 
       maxAge: 1000 * 60 * 60 * 24 * 30,
       // Tell browser when a file from the server should expire from cache
@@ -312,7 +314,7 @@ module.exports = configure(function (/* ctx */) {
       // List of SSR middleware files (src-ssr/middlewares/*). Order is important.
       middlewares: [
         // ...
-        'render' // Should not be missing, and should be last in the list.
+        "render", // Should not be missing, and should be last in the list.
       ],
 
       // optional; add/remove/change properties
@@ -336,7 +338,7 @@ module.exports = configure(function (/* ctx */) {
       chainWebpackWebserver(chain) {
         // chain is a webpack-chain instance
         // of the Webpack configuration
-      }
+      },
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa
@@ -351,15 +353,15 @@ module.exports = configure(function (/* ctx */) {
       // variables used to inject specific PWA
       // meta tags (below are default values);
       metaVariables: {
-        appleMobileWebAppCapable: 'yes',
-        appleMobileWebAppStatusBarStyle: 'default',
-        appleTouchIcon120: 'icons/apple-icon-120x120.png',
-        appleTouchIcon180: 'icons/apple-icon-180x180.png',
-        appleTouchIcon152: 'icons/apple-icon-152x152.png',
-        appleTouchIcon167: 'icons/apple-icon-167x167.png',
-        appleSafariPinnedTab: 'icons/safari-pinned-tab.svg',
-        msapplicationTileImage: 'icons/ms-icon-144x144.png',
-        msapplicationTileColor: '#000000'
+        appleMobileWebAppCapable: "yes",
+        appleMobileWebAppStatusBarStyle: "default",
+        appleTouchIcon120: "icons/apple-icon-120x120.png",
+        appleTouchIcon180: "icons/apple-icon-180x180.png",
+        appleTouchIcon152: "icons/apple-icon-152x152.png",
+        appleTouchIcon167: "icons/apple-icon-167x167.png",
+        appleSafariPinnedTab: "icons/safari-pinned-tab.svg",
+        msapplicationTileImage: "icons/ms-icon-144x144.png",
+        msapplicationTileColor: "#000000",
       },
 
       // Optional, overrides metaVariables above;
@@ -371,11 +373,11 @@ module.exports = configure(function (/* ctx */) {
             // this entry will generate:
             // <meta name="theme-color" content="ff0">
 
-            tagName: 'meta',
+            tagName: "meta",
             attributes: {
-              name: 'theme-color',
-              content: '#ff0'
-            }
+              name: "theme-color",
+              content: "#ff0",
+            },
           },
 
           {
@@ -383,17 +385,17 @@ module.exports = configure(function (/* ctx */) {
             // <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
             // references /public/icons/icon-180.png
 
-            tagName: 'link',
+            tagName: "link",
             attributes: {
-              rel: 'apple-touch-icon',
-              sizes: '180x180',
-              href: 'icons/icon-180.png'
+              rel: "apple-touch-icon",
+              sizes: "180x180",
+              href: "icons/icon-180.png",
             },
-            closeTag: false // this is optional;
-                            // specifies if tag also needs an explicit closing tag;
-                            // it's Boolean false by default
-          }
-        ]
+            closeTag: false, // this is optional;
+            // specifies if tag also needs an explicit closing tag;
+            // it's Boolean false by default
+          },
+        ];
       },
 
       // optional; webpack config Object for
@@ -410,11 +412,10 @@ module.exports = configure(function (/* ctx */) {
       chainWebpackCustomSW(chain) {
         // chain is a webpack-chain instance
         // of the Webpack configuration
-
         // example:
         // chain.plugin('eslint-webpack-plugin')
         //   .use(ESLintPlugin, [{ extensions: [ 'js' ] }])
-      }
+      },
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/developing-cordova-apps/configuring-cordova
@@ -464,5 +465,4 @@ module.exports = configure(function (/* ctx */) {
     },
   };
 });
-
 ```

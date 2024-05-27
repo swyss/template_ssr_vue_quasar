@@ -4,20 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2205f8b2-0fc9-49c4-8b84-96e2a053c0e4" name="Changes" comment="fix: code cleanig and resolve snyk and code-check issues">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="2205f8b2-0fc9-49c4-8b84-96e2a053c0e4" name="Changes" comment="fix: code cleaning and config base design">
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/layouts/drawers/AppDrawer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/layouts/drawers/AppLeftDrawer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/layouts/drawers/AppRightDrawer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/layouts/footer/AppFooter.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/layouts/header/AppHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/layouts/header/HeaderMainToolbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/layouts/header/TitleToolbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/pages/general/InfoPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/pages/user/LoginPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/stores/AppInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/stores/AppProperty.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quasar-project/INFO.md" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/INFO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasar-project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasar-project/quasar.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/quasar.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasar-project/src-ssr/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src-ssr/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quasar-project/src/css/quasar.variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/css/quasar.variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasar-project/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/layouts/MainLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/layouts/MainLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/pages/ErrorNotFound.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/pages/errors/ErrorNotFound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/router/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -69,10 +85,16 @@
     "settings.editor.selected.configurable": "settings.qodana",
     "ts.external.directory.path": "C:\\Users\\wyss\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\templates\ssr_quasar\src\frontend\quasar-project\src\pages\errors" />
       <recent name="D:\dev\templates\ssr_quasar\src\frontend\quasar-project" />
     </key>
   </component>
@@ -92,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716710873477</updated>
       <workItem from="1716710874511" duration="5078000" />
-      <workItem from="1716717637694" duration="2938000" />
+      <workItem from="1716717637694" duration="15931000" />
     </task>
     <task id="LOCAL-00001" summary="fix: code cleanig and resolve snyk and code-check issues">
       <option name="closed" value="true" />
@@ -102,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716713784337</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix: code cleaning and config base design">
+      <option name="closed" value="true" />
+      <created>1716721493554</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716721493554</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +141,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fix: code cleanig and resolve snyk and code-check issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: code cleanig and resolve snyk and code-check issues" />
+    <MESSAGE value="fix: code cleaning and config base design" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: code cleaning and config base design" />
   </component>
 </project>
