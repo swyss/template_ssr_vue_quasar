@@ -3,8 +3,8 @@ defineOptions({
   name: "AppHeader",
 });
 // imports
-import TitleToolbar from "layouts/header/TitleToolbar.vue";
-import MainToolbar from "layouts/header/HeaderMainToolbar.vue";
+import TitleToolbar from "layouts/header/HeaderTitleToolbar.vue";
+import MenuToolbar from "layouts/header/HeaderMenuToolbar.vue";
 // variables
 
 // functions
@@ -13,17 +13,7 @@ import MainToolbar from "layouts/header/HeaderMainToolbar.vue";
 <template>
   <q-header class="bg-primary text-black" elevated>
     <title-toolbar></title-toolbar>
-    <main-toolbar></main-toolbar>
-    <!-- progress bar-->
-    <div class="q-pa-md">
-      <q-ajax-bar
-        ref="bar"
-        color="accent"
-        position="bottom"
-        size="10px"
-        skip-hijack
-      />
-    </div>
+    <menu-toolbar></menu-toolbar>
   </q-header>
 </template>
 
