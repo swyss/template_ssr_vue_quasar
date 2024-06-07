@@ -4,25 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2205f8b2-0fc9-49c4-8b84-96e2a053c0e4" name="Changes" comment="feat: add header">
+    <list default="true" id="97f856d6-e404-43dd-887b-516dc5a3ea5b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/quasar-project/src/pages/ErrorNotFound.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dcignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/INFO.md" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/INFO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/quasar.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/quasar.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src-pwa/custom-service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src-pwa/custom-service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src-pwa/register-service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src-pwa/register-service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src-ssr/middlewares/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src-ssr/middlewares/render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src-ssr/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src-ssr/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quasar-project/src/css/quasar.variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/css/quasar.variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quasar-project/src/layouts/footer/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/layouts/footer/AppFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasar-project/src/layouts/header/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/layouts/header/AppHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasar-project/src/layouts/header/HeaderMainToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/layouts/header/HeaderMenuToolbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quasar-project/src/layouts/header/TitleToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/layouts/header/HeaderTitleToolbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/layouts/header/HeaderMenuToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/layouts/header/HeaderMenuToolbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/layouts/header/HeaderTitleToolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/layouts/header/HeaderTitleToolbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/pages/errors/ErrorNotFound.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/pages/general/InfoPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/pages/user/LoginPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/stores/AppInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/stores/AppInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/src/stores/AppProperty.js" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/src/stores/AppProperty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quasar-project/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/quasar-project/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Vue Composition API Component" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -39,53 +52,30 @@
     &quot;accountId&quot;: &quot;48677f2a-0831-4e29-9875-7050334c7fa2&quot;
   }
 }</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2gzqhZZXqpSVMN59Nzw2EwJTQF3" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2hTEiW2KOLfd7C8RQtuFfaLPYTR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "20.10.0",
-    "javascript.nodejs.core.library.typings.version": "20.10.8",
     "last_opened_file_path": "D:/dev/templates/ssr_quasar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "npm.install dotenv.executor": "Run",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.qodana",
+    "npm.install.executor": "Run",
     "ts.external.directory.path": "C:\\Users\\wyss\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
-    ]
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\dev\templates\ssr_quasar\src\frontend\quasar-project\src\pages\errors" />
-      <recent name="D:\dev\templates\ssr_quasar\src\frontend\quasar-project" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,51 +86,18 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2205f8b2-0fc9-49c4-8b84-96e2a053c0e4" name="Changes" comment="" />
-      <created>1716710873477</created>
+      <changelist id="97f856d6-e404-43dd-887b-516dc5a3ea5b" name="Changes" comment="" />
+      <created>1717609794496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1716710873477</updated>
-      <workItem from="1716710874511" duration="5078000" />
-      <workItem from="1716717637694" duration="17418000" />
-      <workItem from="1717088186387" duration="60000" />
-      <workItem from="1717088257728" duration="3176000" />
+      <updated>1717609794496</updated>
+      <workItem from="1717609795506" duration="1142000" />
+      <workItem from="1717766809862" duration="50000" />
+      <workItem from="1717766880078" duration="1188000" />
     </task>
-    <task id="LOCAL-00001" summary="fix: code cleanig and resolve snyk and code-check issues">
-      <option name="closed" value="true" />
-      <created>1716713784337</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1716713784337</updated>
-    </task>
-    <task id="LOCAL-00002" summary="fix: code cleaning and config base design">
-      <option name="closed" value="true" />
-      <created>1716721493554</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1716721493554</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feat: add header">
-      <option name="closed" value="true" />
-      <created>1716836539504</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1716836539504</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fix: code cleanig and resolve snyk and code-check issues" />
-    <MESSAGE value="fix: code cleaning and config base design" />
-    <MESSAGE value="feat: add header" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add header" />
   </component>
 </project>

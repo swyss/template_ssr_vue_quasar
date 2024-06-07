@@ -48,6 +48,14 @@ yarn upgrade
 quasar build
 ```
 
+### add new store module
+
+```bash
+quasar new store <module-name>
+
+```
+
+
 ### Customize the configuration
 
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).

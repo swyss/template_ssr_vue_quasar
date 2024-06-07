@@ -12,7 +12,7 @@
     />
   </div>
   <!-- footer -->
-  AppFooter
+  <q-footer reveal elevated class="bg-grey-7 text-white"> footer </q-footer>
 </template>
 
 <style scoped></style>

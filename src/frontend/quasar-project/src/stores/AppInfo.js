@@ -1,19 +1,19 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
-export const useAppInfoStore = defineStore("app_infos", {
+export const useAppInfoStore = defineStore('counter', {
   state: () => ({
-    counter: 0,
+    counter: 0
   }),
 
   getters: {
-    doubleCount(state) {
-      return state.counter * 2;
-    },
+    doubleCount (state) {
+      return state.counter * 2
+    }
   },
 
   actions: {
-    printInfo() {
-      this.counter++;
-    },
-  },
-});
+    increment () {
+      this.counter++
+    }
+  }
+})

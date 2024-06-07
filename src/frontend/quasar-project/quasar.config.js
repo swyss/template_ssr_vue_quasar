@@ -8,7 +8,7 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
-const { configure } = require("quasar/wrappers");
+const {configure} = require("quasar/wrappers");
 const path = require("path");
 
 module.exports = configure(function (/* ctx */) {
@@ -30,8 +30,7 @@ module.exports = configure(function (/* ctx */) {
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
       target: {
-        browser: ["es2019", "edge88", "firefox78", "chrome87", "safari13.1"],
-        node: "node20",
+        browser: ["es2019", "edge88", "firefox78", "chrome87", "safari13.1"], node: "node20",
       },
 
       vueRouterMode: "hash", // available values: 'hash', 'history'
@@ -53,31 +52,21 @@ module.exports = configure(function (/* ctx */) {
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
 
-      vitePlugins: [
-        [
-          "@intlify/vite-plugin-vue-i18n",
-          {
-            // if you want to use Vue I18n Legacy API, you need to set `compositionOnly: false`
-            // compositionOnly: false,
+      vitePlugins: [["@intlify/vite-plugin-vue-i18n", {
+        // if you want to use Vue I18n Legacy API, you need to set `compositionOnly: false`
+        // compositionOnly: false,
 
-            // if you want to use named tokens in your Vue I18n messages, such as 'Hello {name}',
-            // you need to set `runtimeOnly: false`
-            // runtimeOnly: false,
+        // if you want to use named tokens in your Vue I18n messages, such as 'Hello {name}',
+        // you need to set `runtimeOnly: false`
+        // runtimeOnly: false,
 
-            // you need to set i18n resource including paths !
-            include: path.resolve(__dirname, "./src/i18n/**"),
-          },
-        ],
-        [
-          "vite-plugin-checker",
-          {
-            eslint: {
-              lintCommand: 'eslint "./**/*.{js,mjs,cjs,vue}"',
-            },
-          },
-          { server: false },
-        ],
-      ],
+        // you need to set i18n resource including paths !
+        include: path.resolve(__dirname, "./src/i18n/**"),
+      },], ["vite-plugin-checker", {
+        eslint: {
+          lintCommand: 'eslint "./**/*.{js,mjs,cjs,vue}"',
+        },
+      }, {server: false},],],
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
@@ -88,17 +77,17 @@ module.exports = configure(function (/* ctx */) {
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
     framework: {
-      config: { dark: "true" },
+      config: {},
 
-      iconSet: "bootstrap-icons", // Quasar icon set
-      lang: "en-US", // Quasar language pack
+      // iconSet: 'material-icons', // Quasar icon set
+      // lang: 'en-US', // Quasar language pack
 
       // For special cases outside of where the auto-import strategy can have an impact
       // (like functional components as one of the examples),
       // you can manually specify Quasar components/directives to be available everywhere:
       //
-      components: [],
-      directives: [],
+      // components: [],
+      // directives: [],
 
       // Quasar plugins
       plugins: [],
@@ -154,14 +143,12 @@ module.exports = configure(function (/* ctx */) {
       prodPort: 3000, // The default port that the production server should use
       // (gets superseded if process∙env∙PORT is specified at runtime)
 
-      maxAge: 1000 * 60 * 60 * 24 * 30,
-      // Tell browser when a file from the server should expire from cache
+      maxAge: 1000 * 60 * 60 * 24 * 30, // Tell browser when a file from the server should expire from cache
       // (the default value, in ms)
       // Has effect only when server.static() is used
 
       // List of SSR middleware files (src-ssr/middlewares/*). Order is important.
-      middlewares: [
-        // ...
+      middlewares: [// ...
         "render", // Should not be missing, and should be last in the list.
       ],
 
@@ -212,39 +199,39 @@ module.exports = configure(function (/* ctx */) {
         msapplicationTileColor: "#000000",
       },
 
-      // Optional, overrides metaVariables above;
-      // Use this OR metaVariables, but not both;
-      /*      metaVariablesFn (manifest) {
-        // ...
-        return [
-          {
-            // this entry will generate:
-            // <meta name="theme-color" content="ff0">
+      /*  // Optional, overrides metaVariables above;
+       // Use this OR metaVariables, but not both;
+       metaVariablesFn(manifest) {
+         // ...
+         return [
+           {
+             // this entry will generate:
+             // <meta name="theme-color" content="ff0">
 
-            tagName: 'meta',
-            attributes: {
-              name: 'theme-color',
-              content: '#ff0'
-            }
-          },
+             tagName: "meta",
+             attributes: {
+               name: "theme-color",
+               content: "#ff0",
+             },
+           },
 
-          {
-            // this entry will generate:
-            // <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
-            // references /public/icons/icon-180.png
+           {
+             // this entry will generate:
+             // <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
+             // references /public/icons/icon-180.png
 
-            tagName: 'link',
-            attributes: {
-              rel: 'apple-touch-icon',
-              sizes: '180x180',
-              href: 'icons/icon-180.png'
-            },
-            closeTag: false // this is optional;
-                            // specifies if tag also needs an explicit closing tag;
-                            // it's Boolean false by default
-          }
-        ]
-      },*/
+             tagName: "link",
+             attributes: {
+               rel: "apple-touch-icon",
+               sizes: "180x180",
+               href: "icons/icon-180.png",
+             },
+             closeTag: false, // this is optional;
+             // specifies if tag also needs an explicit closing tag;
+             // it's Boolean false by default
+           },
+         ];
+       }, */
 
       // optional; webpack config Object for
       // the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
